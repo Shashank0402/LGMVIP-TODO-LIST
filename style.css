@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+body{
+    background-color: #11ffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 1000;
+    color: blue;
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+.todo-list{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0,0,0.1) ;
+    border-radius: 6px;
+    background-color: #fff;
+    
+}
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.entered-list{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    font-weight: bolder;
+    
+}
+.add-list{
+border: none;
+border-radius: 5px;
+background-color:rgb(8, 6,133);
+outline: none;
+font-size: 16px;
+color: #fff;
+cursor: pointer;
+opacity: .6;
+pointer-events: none;
+font-weight: bold;
+}
+.add-list{
+    opacity: 1;
+    pointer-events: all;
+}
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px rgba(0, 0,0,0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item p{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #0a0a0a;
+    letter-spacing: 1px;
+}
+.item.completed p{
+    text-decoration: line-through;
+    color: #11111180;
+}
+.item-btn{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.item-btn i{
+    color: rgb(8, 6,133);
+    font-size: 18px;
+    cursor: pointer;
+}
